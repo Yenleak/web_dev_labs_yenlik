@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    height: 100vh; 
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column; 
+}
+
+.main-container {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto; 
+    flex-grow: 1; 
+    padding-top: 50px; 
+}
+
+
+.sol-boligi h1{
+    color: #1877f2;
+    font-size: 60px;
+    margin-bottom: 0;
+    letter-spacing: -2px ;
+}
+.sol-boligi p{
+    font-size: 26px;
+    margin-top: -10px;
+    width: 500px;
+    padding: 15px;
+}
+
+
+form{
+    background-color: #ffffff;
+    padding: 20px 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0, 0, 0.5) 0 6 px 10 px rgba(0,0, 0, 0.1);
+    width: 365px;
+    display: flex;
+    flex-direction: column;/*бір-бірінің астына қою үшін*/
+    text-align: center;
+    margin-top: 150px;
+    margin-left: 70px;
+}
+
+/*вход*/
+form button[type="submit"] {
+    background-color: #1877f2; 
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+}
+form button[type="submit"]:hover{
+    background-color: #166fe5; /*чуть қараяды мышка тисе*/
+}
+
+/*забыли пароль*/
+form a{
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 14px;
+    margin: 15px 0;
+    display: inline-block;
+}
+form a:hover{
+    text-decoration: underline;
+}
+
+
+hr{
+    border: none;
+    border-top: 1px solid #dadde1;
+    margin: 20px 0;
+    width: 100%;
+}
+
+/*создать новый акк*/
+.creat-btn{
+    background-color: #42b72a; 
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 48px;
+    width: fit-content; 
+    align-self: center; 
+}
+.creat-btn:hover{
+    background-color: #36a420;
+}
+
+.cc2{
+    text-decoration: none;
+}
+.cc2:hover{
+    text-decoration: underline;
+}
+
+input{
+    height: 50px;
+    font-size: 17px;
+    padding: 0 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    outline: none;
+}
+
+input:focus{
+    border-color:  #1877f2;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+.site-footer {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #8e8e8e;
+    padding: 20px 0;
+    margin-top: auto; 
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    margin: 0 8px;
+    color: #8e8e8e;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+.footer-bottom span {
+    margin: 0 10px;
+}

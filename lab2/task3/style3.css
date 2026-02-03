@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+  
+  body {
+    background-color: #ffffff;
+    color: #24292f;
+    line-height: 1.6;
+  }
+  
+  main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 3rem 1.5rem;
+  }
+  
+
+  .hero {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    max-width: 700px;
+    margin: 0 auto 2rem;
+    color: #57606a;
+  }
+  
+  .btn-primary {
+    background: #24292f;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary {
+    background: transparent;
+    border: 1px solid #d0d7de;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+
+  .pricing {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .card {
+    flex: 1;
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 2rem;
+    position: relative;
+  }
+  
+  .card h3 {
+    margin-bottom: 0.5rem;
+  }
+  
+  .price {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+  }
+  
+  .price span {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #57606a;
+  }
+  
+  .card ul {
+    margin-top: 1.5rem;
+    list-style: none;
+  }
+  
+  .card ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+
+  .featured {
+    border: 2px solid #0969da;
+  }
+  
+  .badge {
+    position: absolute;
+    top: -12px;
+    left: 1.5rem;
+    background: #0969da;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.75rem;
+    border-radius: 20px;
+  }
+  
+  .btn-group {
+    display: flex;
+    gap: 0.75rem;
+  }
+  
+
+  .addons h2 {
+    margin-bottom: 2rem;
+  }
+  
+  .addons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .addon-card {
+    border: 1px solid #d0d7de;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+  
+
+  @media (max-width: 768px) {
+    .pricing {
+      flex-direction: column;
+    }
+  
+    .addons-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
