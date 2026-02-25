@@ -1,14 +1,17 @@
-import { Component, signal, computed, inject } from '@angular/core';
+import { Component, signal, computed, inject, ViewEncapsulation } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductService } from './services/product.service';
 
+// @ts-ignore
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, FormsModule, ProductListComponent],
-  templateUrl: './app.component.html'
+  imports: [CommonModule, FormsModule, ProductListComponent], // Убрал ComponentComponent
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
   public service = inject(ProductService);

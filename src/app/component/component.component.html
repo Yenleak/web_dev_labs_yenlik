@@ -1,0 +1,6 @@
+<input
+  [(ngModel)]="searchTerm"
+  (ngModelChange)="filterProducts()"
+  placeholder="Іздеу..."
+>
+<app-product-list [products]="filteredProducts"></app-product-list>
