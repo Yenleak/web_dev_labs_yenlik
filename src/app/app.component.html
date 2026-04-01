@@ -1,0 +1,25 @@
+<h1 class="bas">Online Kaspi-Yenlik Store</h1>
+<hr>
+<h2 text align="center" class="cat1" >Категориялар</h2>
+<div class="categories">
+  @for (cat of service.categories; track cat.id) {
+    <button class="category-btn"
+      (click)="selectCategory(cat.id)"
+      [class.active]="cat.id === selectedCategoryID()">
+      {{ cat.name }}
+    </button>
+  }
+</div>
+
+<div class="categor">
+@if (!selectedCategoryID()) {
+} @else {
+  <div class="box">
+    <input
+      [ngModel]="searchTerm()"
+      (ngModelChange)="searchTerm.set($event)"
+      placeholder="Іздеу...">
+  </div>
+  <app-product-list [products]="filteredProducts()"></app-product-list>
+}
+</div>

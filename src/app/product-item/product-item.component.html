@@ -1,0 +1,22 @@
+<div class="card">
+  <img [src]="product().image" class="product-img" alt="image">
+
+  <div class="content">
+    <h3>{{ product().name }}</h3>
+    <p class="price">{{ product().price }} ₸</p>
+
+    <div style="color: #fbc02d;">⭐ {{ product().rating }}</div>
+
+    <div class="buttons" style="display: flex; gap: 5px; margin-top: 10px;">
+      <button (click)="like()" style="background: #f5f5f5; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+        ❤️ {{ product().likes }}
+      </button>
+      <button (click)="share()" style="background: #0088cc; color: white; border: 10px; padding: 5px 10px; border-radius: 4px; cursor: pointer; flex:1;">
+        Бөлісу
+      </button>
+      <button (click)="remove()" style="background: #ff5252; color: white; border: none; padding: 5px 10px; border-radius: 4px; cursor: pointer;">
+        🗑️
+      </button>
+    </div>
+  </div>
+</div>

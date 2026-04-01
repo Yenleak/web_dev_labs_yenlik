@@ -1,0 +1,19 @@
+.bas{
+  text-align: center;
+  color: #d11f1f;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.box{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
